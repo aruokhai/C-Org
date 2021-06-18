@@ -1,0 +1,21 @@
+name: "Decentralized Autonomous Trust Token"
+supportedstandards: ["NEP-17"]
+safemethods: ["balanceOf", "decimals", "symbol", "totalSupply"]
+events:
+- name: Transfer
+  parameters:
+  - name: from
+    type: Hash160
+  - name: to
+    type: Hash160
+  - name: amount
+    type: Integer
+- name: Debug
+  parameters:
+  - name: line
+    type: Integer
+- name: Abort
+  parameters:
+  - name: why
+    type: ByteString
+
